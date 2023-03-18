@@ -2,43 +2,179 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fontawesome-free/css/fontawesome.min.css">
-    <title>Odin-recipes</title>
+    <script src="https://kit.fontawesome.com/bdd11beaaa.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
 </head>
-<section>
-    <section class="navbar"> 
-    <section class="header">
-        <a href="#"><img src="images/youtube-logo.png" alt="Logo" height="60px" width="110px"></a>
-        <form class="form">
-          <input type="text" placeholder="Search.." name="search">
-          <button title="button" type="submit"><i class="fa fa-search"></i></button>
-          <i class="fa fa-microphone" style="font-size:28px;color:#e8e8e8"></i>
-        </form>
-        <div class="end"> 
-        <i class="fa fa-camera" style="font-size: 27px;color: #e8e8e8;"></i>
-        <i class="fa fa-bell" style="font-size:27px;color:rgb(223, 223, 223)"></i>
-       <img src="images/cat.jpeg" alt="log" class="rounded-circle" width="110px" height="60px">
-      </div>
-    </nav>
-</section>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
 
-<section class="main">
-  <iframe width="1050" height="705" src="https://www.youtube.com/embed/qcV3GPeRpvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <br>
-  <div class="next"> 
-   <ul>
-    <li><img src="images/thu1.jpeg" alt="thumb" width="600px"></li>
-    <li><img src="images/thu2.jpeg" alt="thumb" width="600px"></li>
-    <li><img src="images/thu3.jpeg" alt="thumb" width="600px"></li>
-    <li><img src="images/thu4.jpeg" alt="thumb" width="600px"></li>
-    <li><img src="images/thu5.jpeg" alt="thumb" width="600px"></li>
-    <li><img src="images/thu6.jpeg" alt="thumb" width="600px"></li>
-    <li><img src="images/thu7.jpeg" alt="thumb" width="600px"></li>
-   </ul>
-  </div>
-</section>
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+     <a href="#home" class="active">Home</a>
+     <a href="#about">About</a>
+     <a href="#services">Services</a>
+     <a href="#project">Projects</a>
+     <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+     <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Sam Muriithi</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, inventore numquam blanditiis soluta tempore vero!</p>
+
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <a href="#" class="btn">Download CV</a>
+     </div>
+
+     <div class="home-img">
+        <img src="Images/dp.jpg" alt="">
+     </div>
+  </section>
+
+     <section class="about" id="about">
+      <div class="about-img">
+         <img src="Images/me.jpg" alt="" class="about-img">
+      </div>
+
+      <div class="about-content">
+         <h2 class="heading">About <span>Me</span></h2>
+         <h3>Fullstack Developer!</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, voluptatum facilis. Officia inventore molestiae deserunt! Sunt vel et natus minus corrupti, harum recusandae quaerat, corporis obcaecati necessitatibus numquam itaque commodi magni eius explicabo doloremque fuga dolore? Labore libero deserunt unde. Illo quidem maiores, in ipsam quisquam quos. Accusantium, impedit cum!</p>
+         <a href="#" class="btn">Read More</a>
+      </div>
+     </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+
+      <div class="services-container">
+         <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo iusto excepturi fuga quas voluptatem magnam dolores perferendis, tenetur dolorem pariatur.</p>
+            <a href="#" class="btn">Read More</a>
+         </div>
+
+         <div class="services-box">
+            <i class='bx bxs-paint'></i>
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo iusto excepturi fuga quas voluptatem magnam dolores perferendis, tenetur dolorem pariatur.</p>
+            <a href="#" class="btn">Read More</a>
+         </div>
+
+         <div class="services-box">
+            <i class='bx bx-bar-chart-alt'></i>
+            <h3>Digital Marketing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo iusto excepturi fuga quas voluptatem magnam dolores perferendis, tenetur dolorem pariatur.</p>
+            <a href="#" class="btn">Read More</a>
+         </div>
+      </div>
+    </section>
+
+    <section class="project" id="project">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="project-container">
+         <div class="project-box">
+            <img src="Images/one.jpg" alt="">
+            <div class="project-layer">
+               <h4>Web Design</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tenetur?</p>
+               <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+
+         <div class="project-box">
+            <img src="Images/two.jpg" alt="">
+            <div class="project-layer">
+               <h4>Web Design</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tenetur?</p>
+               <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+
+         <div class="project-box">
+            <img src="Images/three.jpg" alt="">
+            <div class="project-layer">
+               <h4>Web Design</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tenetur?</p>
+               <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+
+         <div class="project-box">
+            <img src="Images/four.jpg" alt="">
+            <div class="project-layer">
+               <h4>Web Design</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tenetur?</p>
+               <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+
+         <div class="project-box">
+            <img src="Images/five.jpg" alt="">
+            <div class="project-layer">
+               <h4>Web Design</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tenetur?</p>
+               <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+
+         <div class="project-box">
+            <img src="Images/six.jpg" alt="">
+            <div class="project-layer">
+               <h4>Web Design</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tenetur?</p>
+               <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="#">
+         <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address">
+         </div>
+         <div class="input-box">
+            <input type="tel" placeholder="Phone Number">
+            <input type="text" placeholder="Email Subject">
+         </div>
+         <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+         <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+         <p>Copyright &copy; 2023 by Sam | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+         <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+      </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+    <script src="nel.js"></script>
 </body>
 </html>
